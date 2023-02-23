@@ -6,12 +6,13 @@
 
 body{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 main{
   height: calc(100vh - 170px);
   overflow: auto;
+  background-color: red;
 }
 
 .menu{
@@ -34,6 +35,11 @@ main{
   border-radius: 3px;
   background-color: #43464A;
   color: white;
+  cursor: pointer;
+}
+
+.button1:hover,.button2:hover{
+  background-color: #7a7a7a;
 }
 
 .button2{
@@ -48,9 +54,50 @@ footer{
   background-color: #222222;
 }
 
+.left{
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+}
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .end{ 
-  padding: 45px;
+  display: flex;
+  padding: 37px 20px;
   color: red;
   font-weight: 600;
+  cursor: pointer;
+}
+
+.fa-solid{
+  margin-bottom: 10px;
+}
+
+.icon:hover{
+  color: green;
+}
+
+.icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.fa-angle-up{
+  color: white;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.end:hover{
   background-color: #4A4A4A;
 }
