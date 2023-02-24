@@ -9,10 +9,43 @@ body{
   font-size: 12px;
 }
 
+header{height: 75px;}
+
 main{
-  height: calc(100vh - 170px);
-  overflow: auto;
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  height: calc(100vh - 165px);
+  overflow-y: auto;
+  background-color: black;
+  padding: 10px 0;
+}
+
+.box{
+  position: relative;
+  overflow: hidden;
+  height: 150px;
+  width: 255px;
+  margin: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: green;
+}
+
+.box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box .name{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 5px 6px 0px;
+  background-color: rgba(96, 96, 96, 0.9);
+  color: white;
 }
 
 .menu{
